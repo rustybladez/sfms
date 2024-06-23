@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sign Up Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            background-color: #f8f9fa;
+        }
+        .form-container {
+            max-width: 400px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin: 20px;
+        }
+        .center-placeholder::placeholder {
+            text-align: center;
+        }
+        .form-container .form-group {
+            margin-bottom: 15px;
+        }
+        .form-container .btn {
+            width: 100%;
+        }
+        .form-container .switch-form {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .form-container .switch-form a {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<!-- Start Sign Up form -->
+<div id="signup-form" class="form-container">
+    <h2 class="text-center">Sign Up</h2>
+    <form>
+        <div class="form-group">
+            <label for="signup-name">Full Name</label>
+            <input type="text" class="form-control" id="signup-name" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+            <label for="signup-email">Email address</label>
+            <input type="email" class="form-control" id="signup-email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="Phone">Phone Number</label>
+            <input type="Phone" class="form-control" id="signup-Phone" placeholder="Enter your Phone Number" required>
+        </div>
+        <div class="form-group">
+            <label for="signup-password">Password</label>
+            <input type="password" class="form-control" id="signup-password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+    <div class="switch-form">
+        <p>Already have an account? <a href="/login">Login</a></p>
+    </div>
+</div>
+<!-- End Sign Up form -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

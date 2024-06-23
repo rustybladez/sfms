@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.com">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding-top: 56px; /* Adjust padding to account for the fixed navbar height */
+        }
+        .navbar {
+            margin-bottom: 25px;
+            background-color: #343a40;
+        }
+        .navbar .nav-link,
+        .navbar .navbar-brand {
+            color: white !important;
+            font-weight: bold;
+            font-size: 1.4em;
+        }
+        .navbar .nav-link:hover {
+            color: #ddd !important;
+        }
+        .hero-section {
+             background-image: url('/image/home.png');
+            background-size: cover;
+            color: #071DF9;
+            padding: 167px 0;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: 4em;
+            text-shadow: 2px 2px 5px #000;
+        }
+        .features {
+            background: url('/mnt/data/image.png') no-repeat center center;
+            background-size: cover;
+            padding: 35px;
+            color: white;
+        }
+        .feature-box {
+            text-align: center;
+            padding: 7px;
+            background: rgba(0, 0, 0, 0.5);
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .feature-box img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 25px;
+        }
+        .feature-box h3 {
+            color: #fff;
+        }
+        .about-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+        .contact-section {
+            background-color: #e9ecef;
+            padding: 50px 0;
+        }
+        .footer {
+            background-color: #343a40;
+            padding: 10px 0;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-3"><a class="nav-link" href="#features">Features</a></li>
+            <li class="nav-item mx-3"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item mx-3"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item mx-3"><a class="nav-link btn btn-primary text-white" href="login">Login</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero-section">
+    <div class="container">
+        <h1>Sustainable Farming Management System</h1>
+        <h4>Optimizing agriculture through technology for a sustainable future</h4>
+    </div>
+</div>
+
+<!-- Features Section -->
+<div id="features" class="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 feature-box">
+                <img src="https://via.placeholder.com/80" alt="Interactive Dashboard">
+                <h3>Interactive Dashboard</h3>
+                <p>After Create a account get all feature</p>
+            </div>
+            <div class="col-md-3 feature-box">
+                <img src="https://via.placeholder.com/80" alt="Irrigation Scheduling Alert">
+                <h3>Irrigation Scheduling Alert</h3>
+                <p>Enables farmers to schedule irrigation and view schedules.</p>
+            </div>
+            <div class="col-md-3 feature-box">
+                <img src="https://via.placeholder.com/80" alt="Crop Management">
+                <h3>Crop Management</h3>
+                <p>Manage your crops efficiently with our advanced tools.</p>
+            </div>
+            <div class="col-md-3 feature-box">
+                <img src="https://via.placeholder.com/80" alt="Soil Health Monitoring">
+                <h3>Soil Health Monitoring</h3>
+                <p>Monitor soil health and receive actionable insights.</p>
+            </div>
+            <div class="col-md-2 feature-box">
+                <img src="https://via.placeholder.com/80" alt="Weather Alerts">
+                <h3>Weather Alerts</h3>
+                <p>Stay informed with real-time weather alerts and forecasts.</p>
+            </div>
+            <div class="col-md-3 feature-box">
+                <img src="https://via.placeholder.com/80" alt="Pest Control Recommendations">
+                <h3>Pest Control Recommendations</h3>
+                <p>By using artificial intelligence(AI) get better solution</p>
+            </div>
+            <div class="col-md-3 feature-box">
+                <img src="https://via.placeholder.com/80" alt="Agriculture Expert Consultation">
+                <h3>Agriculture Expert Consultation</h3>
+                <p>Consult experts for personalized advice and solutions.</p>
+            </div>
+            <div class="col-md-3 feature-box">
+                <img src="https://via.placeholder.com/80" alt="Update profile and information">
+                <h3>Update profile and information</h3>
+                <p> Farmer can update their profile and admin can update their system and their IoT item
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Section -->
+<div id="about" class="about-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>About SFMS</h2>
+                <p>Agriculture is the backbone of Bangladesh's economy, employing a significant portion of the population and contributing substantially to the country's GDP. However, traditional farming practices face numerous challenges, including inefficient resource management, unpredictable weather patterns, pest infestations, and soil degradation. To address these issues and promote sustainable agriculture, the Sustainable Farming Management System (SFMS) has been developed.
+                    SFMS leverages modern technology to provide farmers with tools and information that optimize crop management, enhance soil health, streamline irrigation practices, and respond to weather and pest threats effectively.The Sustainable Farming Management System (SFMS) is designed to assist farmers in managing their agricultural activities efficiently. The system will offer features like crop yield prediction, pest control recommendations, soil health monitoring,
+                    irrigation scheduling, and weather alerts. The application will use Java Server Pages (JSP) for its front-end and Java Servlets for back-end processing, along with a MySQL database for data storage.The Sustainable Farming Management System (SFMS) is a comprehensive digital platform designed to enhance agricultural practices in Bangladesh. By leveraging technology, SFMS aims to empower farmers and improve overall crop productivity, soil health, and resource management.
+                    The system caters to two primary actors: farmers and administrators.The Sustainable Farming Management System (SFMS) is a groundbreaking initiative designed to transform the agricultural landscape of Bangladesh by leveraging cutting-edge technology. This comprehensive digital platform is built to address the myriad challenges faced by farmers and to promote sustainable agricultural practices that ensure the long-term health of the ecosystem and the prosperity of farming communities.
+                    The Agricultural Landscape of Bangladesh Agriculture is the lifeblood of Bangladesh's economy, providing employment to a significant portion of the population and contributing substantially to the national GDP. The fertile plains of Bangladesh have been home to agriculture for centuries, with rice, jute, tea, and various fruits and vegetables being the primary crops. However, the sector faces numerous challenges that hinder its full potential, including inefficient resource management,
+                    unpredictable weather patterns, pest infestations, and soil degradation. These issues are compounded by the impacts of climate change, which introduce further uncertainty and risk into farming activities.
+                    The Vision of SFMS SFMS aims to revolutionize the agricultural sector by offering farmers a suite of tools and information designed to optimize crop management, enhance soil health, streamline irrigation practices, and respond effectively to weather and pest threats. By integrating modern technology into traditional farming practices, SFMS seeks to empower farmers, improve crop productivity, and ensure sustainable farming practices that protect and preserve natural resources for future generations.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<div id="contact" class="contact-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Contact Us</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>&copy; 2024 SFMS. All rights reserved.</p>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
